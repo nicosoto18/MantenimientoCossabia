@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={Style.contenedorFijadoContacto}>
-        <i class="bi bi-whatsapp rounded-circle"></i>
+        <a href="https://api.whatsapp.com/send?phone=3541641390"><i class="bi bi-whatsapp rounded-circle"></i></a>
         </div>
     </div>
   );

@@ -50,15 +50,19 @@
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 82px;
-  height: 82px;
-  margin-right: 2px;
-  font-size: 55px;
-  color: green;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 40px;
   border-radius: 50%;
-  background-color: black;
+  background-color: #25D366;
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 100px;
+}
+
+.contenedorFijadoContacto a {
+    color: #FFFFFF;
 }
