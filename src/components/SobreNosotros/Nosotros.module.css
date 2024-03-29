@@ -1,4 +1,68 @@
 .section1{
-    margin-top: 6em;
-    background-color: red;
+    margin-top: 9em;
 }
+
+.contSection1{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lineaNaranja{
+    border-left: 3px inset #CC5500;
+}
+
+.tituloPpal{
+    text-align: left;
+}
+
+.DescripcionQuienesSomos{
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 10%;
+}
+
+.contenedorAsesoramiento{
+    margin-top: 4em;
+}
+
+.contSectionAsesoramiento{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.backgroundImage{
+background-image: url("../../Fotos//FotoAsesoramiento.jpeg");
+background-size: cover;
+background-position: center;
+position: relative;
+border-left: 2px solid #CC5500;
+object-fit:scale-down;
+}
+
+.contenedorAsesoramiento h2, .contenedorAsesoramiento h3, .contenedorAsesoramiento h4,
+ .contenedorAsesoramiento h5, .contenedorAsesoramiento h6{
+    font-weight: 800;
+}
+
+.contenedorAsesoramiento h4{
+    padding: 10px;
+}
+
+.contenedorBoton{
+    width: 100%;
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.BtComunicate{
+    background-color: #CC5500;
+    margin: 0 auto;
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid #808080;
+    color: #F5F5F5;
+}
+
+

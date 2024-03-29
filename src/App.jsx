@@ -6,6 +6,7 @@ import Home from './components/Home/Home'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer/Footer'
 import Nosotros from './components/SobreNosotros/Nosotros'
+import Contactanos from './components/Contactanos/Contactanos'
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
        <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/Nosotros' element={<Nosotros/>}/>
+        <Route path = "/Contactanos" element={<Contactanos/>}></Route>
        </Routes>
         
         <Footer/> 
