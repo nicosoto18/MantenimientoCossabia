@@ -1,0 +1,86 @@
+.contenedorPpal{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contenedorTitulo{
+    margin-top: 9em;
+    display: flex;
+    align-items: center;
+}
+
+.lineaNaranja{
+    border-left: 3px inset #CC5500;
+    height: 100%;
+}
+
+.contenedorSubtitulo{   
+    margin: 0 auto;
+    margin-top: 6vh;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.conenedorFormasContacto{
+    margin: 0 auto;
+}
+
+.contenedorContacto{
+    background-color: rgba(200, 200, 200, 0.5);
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #CC5500;
+    border-radius: 5px;
+}
+
+.contenedorContacto h4{
+    font-weight: bold;
+}
+
+.Formulario{
+    background-color: #000000;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3em;
+    border: 2px solid #CC5500;
+    border-radius: 2PX;
+    
+}
+
+@media (max-width: 576px){
+    .Formulario{
+        width: 90%;
+    }
+}
+
+@media(min-width: 577px){
+    .Formulario{
+        width: 50%;
+    }
+}
+
+.inputs, .TextareaForm{
+    background-color: #FFFFFF;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.btEnviarConsulta{
+    background-color: #CC5500;
+    color: black;
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
