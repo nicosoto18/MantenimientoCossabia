@@ -64,29 +64,50 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: black;
 }
-h1{
+
+
+
+h1 {
   font-size: 37px;
   color: #F5F5F5;
 }
 
-h2, h3, h4, h5, h6, p{
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   color: #F5F5F5;
 }
 
 
- :root {
+:root {
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-} 
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+
+   h2{
+    font-size: 50px;
+  } 
+
+}

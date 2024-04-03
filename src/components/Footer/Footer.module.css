@@ -13,7 +13,6 @@
 }
 
 .contenedorPrincipal{
-
     width: 80%;
     margin: 0 auto;
 }
@@ -31,7 +30,7 @@
     margin: 10px;
     padding: 1vh;
     background-color: #0072BB;
-    font-size: 2vh;
+    font-size: 1.1em;
     margin: 0 auto;
     color: white;
 }
@@ -65,4 +64,27 @@
 
 .contenedorFijadoContacto a {
     color: #FFFFFF;
+}
+
+
+@media (min-width : 768px){
+    .icono{
+        margin: 10px;
+        padding: 0.4em;
+        background-color: #0072BB;
+        font-size: 1.3em;
+        margin: 0 auto;
+        color: white;
+        margin-top: 1em;
+    }
+
+    .contenedorLinks{
+        font-size: 1.2em;
+        color: #0072BB;
+    }
+
+    .derechoReservadoFooter p{
+        font-size: 0.8em;
+        margin-top: 1.5em;
+       }
 }

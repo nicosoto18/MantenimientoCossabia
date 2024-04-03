@@ -66,3 +66,39 @@ object-fit:scale-down;
 }
 
 
+@media (min-width: 768px){
+    .section1{
+       width: 90%;
+    }
+
+    .DescripcionQuienesSomos{
+        width: 87%;
+        margin-top: 3em;
+        
+    }
+    
+    .backgroundImage{
+        background-size:auto;
+        background-position: center;
+        position: relative;
+        border-left: 4px solid #CC5500;
+        object-fit: scale-down;
+        }
+
+        .contenedorAsesoramiento{
+            width: 87%;
+           
+        }
+ 
+        .contenedorAsesoramiento h4{
+           font-size: 2em;
+        }
+
+        .contenedorAsesoramiento h6{
+            font-size: 1.3em;
+        }
+
+
+
+}
+

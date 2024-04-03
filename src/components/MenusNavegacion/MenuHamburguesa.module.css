@@ -59,8 +59,40 @@
     background-color: red;
 }
 
-
 .links{
     color: #FFFFFF;
     text-decoration: none;
+}
+
+@media (min-width: 768px){
+   .barraNavegacion{
+  
+    height: 4.5em;
+    display: flex;
+    align-items: center;
+   }
+
+   .contenedorDivs img{
+    height: 98%;
+    margin-top: auto;
+    margin-bottom: auto;   
+   }
+
+   .contenedorLinks{
+   
+    display: flex;
+    width: 40%;
+    margin-left: auto;
+    justify-content:space-around;
+    align-items: center;
+   }
+
+   .linkss{
+    color: white;
+    margin: 1em;
+    font-size: 18px;
+    color: #CC5500 ;
+   }
+ 
+
 }

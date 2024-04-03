@@ -1,17 +1,17 @@
-.navBar{
+.navBar {
     margin-top: 0;
 }
 
-.contTituloPrincipal{
-    width: 90% !important ;
+.contTituloPrincipal {
+    width: 90% !important;
     margin-top: 9em;
 }
 
-.linea{
+.linea {
     border-left: 3px inset #CC5500;
 }
 
-.contTitulo2{
+.contTitulo2 {
     width: 80%;
     height: auto;
     margin: 0 auto;
@@ -19,21 +19,21 @@
     display: flex;
     align-items: center;
     text-align: center;
-    
+
 }
 
-.cuadrado{
-    width: 9vh;
-    height: 12vh;
+.cuadrado {
+    width: 6em;
+    height: 7em;
     position: relative;
     margin: 0 auto;
-    border : 1px solid #CC5500;
+    border: 1px solid #CC5500;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.textServicio{
+.textServicio {
     position: absolute;
     width: 80%;
     left: 50%;
@@ -41,30 +41,81 @@
     text-align: center;
 }
 
-.contTitulo2 h2{
+.contTitulo2 h2 {
     font-size: 37px;
     color: white;
 }
-.contTipoServicio{
+
+.contTipoServicio {
     width: 90%;
     margin: 0 auto;
     margin-top: 2em;
     align-items: center;
 }
 
-.contTipoServicio img{
+.contTipoServicio img {
+    object-fit:scale-down;
     width: 100%;
     height: auto;
-    object-fit: contain;
 }
 
-.lineaSeparadora{
+.lineaSeparadora {
     width: 20%;
     border: 1px solid #CC5500;
+    margin-bottom: 1em;
 }
 
-.contTipoServicio h3, .contTipoServicio h6{
-    margin-top: 0.5em;
+.contTipoServicio h3,
+.contTipoServicio h6 {
+    margin-top: 0.7em;
 }
 
 
+@media (min-width : 768px) {
+    .linea {
+        border-left: 8px inset #CC5500;
+    }   
+
+    .contTitulo2 {
+        
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 8em;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contTitulo2 h2 {
+        font-size: 48px;
+        color: white;
+    }
+
+    .cuadrado {
+        width: 6em;
+        height: 8em;
+        border: 2px solid #CC5500;
+    }
+    
+    .contenedorDeServicios{
+      display: flex;
+      align-items: center;
+
+      width: 95%;
+      margin: 0 auto !important;
+    }
+    
+    .contTipoServicio{   
+        height: 29em;
+        margin: 0 auto;
+        margin-top: 1em !important;
+        
+        
+    }
+    .contTipoServicio img {
+        object-fit: cover;
+        width: 28.5em;
+        height: 18em;
+    }
+}
