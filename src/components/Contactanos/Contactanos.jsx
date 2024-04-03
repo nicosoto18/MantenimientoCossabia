@@ -1,6 +1,9 @@
+import FormularioConsulta from "../FormularioConsulta/FormularioConsulta";
 import Styles from "./Contactanos.module.css";
 
+
 const Contactanos = () => {
+
   return (
     <div className={Styles.contenedorPpal}>
       <section>
@@ -22,31 +25,7 @@ const Contactanos = () => {
         </div>
       </section>
 
-      <section>
-        <div>
-          <form action="" className={Styles.Formulario}>
-            <input type="text" placeholder="Nombre" className={Styles.inputs} />
-            <input type="text" placeholder="Email" className={Styles.inputs} />
-            <input
-              type="text"
-              placeholder="Telefono"
-              className={Styles.inputs}
-            />
-            <textarea
-              name="consulta"
-              id="consulta"
-              cols="30"
-              rows="10"
-              className={Styles.TextareaForm}
-              placeholder="Ingrese su consulta"
-            ></textarea>
-            
-            <button className={Styles.btEnviarConsulta}>
-                Envia tu consulta
-            </button>
-          </form>
-        </div>
-      </section>
+     <FormularioConsulta/>
 
       <section>
         <div className="container">

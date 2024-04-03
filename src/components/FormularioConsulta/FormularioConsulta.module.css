@@ -1,0 +1,66 @@
+.Formulario{
+    background-color: #000000;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3em;
+    border: 2px solid #CC5500;
+    border-radius: 2PX;
+}
+
+.contenidoFormulario{
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.inputs, .TextareaForm{
+    background-color: #FFFFFF;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+.inputCointainer{
+ height: 4em;
+ margin-top: 2%;
+ margin-bottom: 2%;
+}
+
+.textareaContainer{
+    height: 18em;
+}
+
+
+.btEnviarConsulta{
+    background-color: #CC5500;
+    color: black;
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 576px){
+    .Formulario{
+        width: 90%;
+    }
+}
+
+@media(min-width: 577px){
+    .Formulario{
+        width: 50%;
+    }
+}
+
+.errores{
+    margin-top: 2px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    color: #FF3333;
+    padding: 0;
+    
+}
+
