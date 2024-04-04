@@ -1,6 +1,7 @@
 import Styles from "./Nosotros.module.css"
 import imgFondoAsesoramiento from "../../Fotos/FotoAsesoramiento.jpeg"
 import { useEffect, useRef } from "react"
+import { Link } from "react-router-dom"
 
 const Nosotros=()=>{
 
@@ -81,7 +82,9 @@ useEffect(()=>{
          </section>
          
          <div className={Styles.contenedorBoton}>
+            <Link to="/Contactanos" className={Styles.linkkk}>
             <button className={Styles.BtComunicate}>Comunicate con nosotros</button>
+            </Link>
          </div>
          
 
