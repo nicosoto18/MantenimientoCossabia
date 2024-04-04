@@ -1,10 +1,22 @@
 import Styles from "./Nosotros.module.css"
 import imgFondoAsesoramiento from "../../Fotos/FotoAsesoramiento.jpeg"
+import { useEffect, useRef } from "react"
 
 const Nosotros=()=>{
+
+const componenteRef = useRef(null)
+
+useEffect(()=>{
+
+   if(componenteRef.current){
+      componenteRef.current.scrollIntoView({behavior: 'smooth', block: 'start'})
+   }
+
+},[])
+
    return(
       <div>
-         <section className={Styles.section1}>
+         <section className={Styles.section1} ref={componenteRef}>
           <div className="container">
           <div className={`row ${Styles.contSection1}`}>
 

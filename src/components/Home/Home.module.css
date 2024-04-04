@@ -1,11 +1,11 @@
 .contenedorPrincipal{
-    width: 90%;
+    width: 94%;
     margin: 0 auto !important;
 }
 
 .contTituloPrincipal {
     width: 90% !important;
-    margin-top: 9em;
+    padding-top: 9em;
 }
 
 .linea {

@@ -1,31 +1,31 @@
-.contenedorPpal{
+.contenedorPpal {
     width: 90%;
     margin: 0 auto;
 }
 
-.contenedorTitulo{
+.contenedorTitulo {
     margin-top: 9em;
     display: flex;
     align-items: center;
 }
 
-.lineaNaranja{
+.lineaNaranja {
     border-left: 3px inset #CC5500;
     height: 100%;
 }
 
-.contenedorSubtitulo{   
+.contenedorSubtitulo {
     margin: 0 auto;
     margin-top: 6vh;
     margin-left: 3%;
     margin-right: 3%;
 }
 
-.conenedorFormasContacto{
+.conenedorFormasContacto {
     margin: 0 auto;
 }
 
-.contenedorContacto{
+.contenedorContacto {
     background-color: rgba(200, 200, 200, 0.5);
     margin: 0 auto;
     text-align: center;
@@ -38,10 +38,6 @@
     border-radius: 5px;
 }
 
-.contenedorContacto h4{
+.contenedorContacto h4 {
     font-weight: bold;
 }
-
-
-
-

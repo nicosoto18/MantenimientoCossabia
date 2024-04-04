@@ -66,6 +66,9 @@
     color: #FFFFFF;
 }
 
+.icono a{
+    color: white;
+}
 
 @media (min-width : 768px){
     .icono{

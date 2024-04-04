@@ -35,17 +35,17 @@ const MenuHamburguesa = () => {
             <div className={Styles.contenedorDeLi}>
 
               <li>
-                <Link className={Styles.links} to="/">
+                <Link className={Styles.links} to="/" onClick={handleClick}>
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link className={Styles.links} to="/Nosotros">
+                <Link className={Styles.links} to="/Nosotros" onClick={handleClick}>
                   Nosotros
                 </Link>
               </li>
               <li>
-                <Link className={Styles.links} to="/Contactanos">
+                <Link className={Styles.links} to="/Contactanos" onClick={handleClick}>
                   Contactanos
                 </Link>
               </li>

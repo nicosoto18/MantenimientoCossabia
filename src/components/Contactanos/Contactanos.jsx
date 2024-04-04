@@ -1,11 +1,21 @@
 import FormularioConsulta from "../FormularioConsulta/FormularioConsulta";
 import Styles from "./Contactanos.module.css";
-
+import { useEffect, useRef } from "react";
 
 const Contactanos = () => {
+  const componenteRef = useRef(null);
+
+  useEffect(() => {
+    if (componenteRef.current) {
+      componenteRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, []);
 
   return (
-    <div className={Styles.contenedorPpal}>
+    <div className={Styles.contenedorPpal} ref={componenteRef}>
       <section>
         <div className="container">
           <div className="row">
@@ -25,7 +35,7 @@ const Contactanos = () => {
         </div>
       </section>
 
-     <FormularioConsulta/>
+      <FormularioConsulta />
 
       <section>
         <div className="container">

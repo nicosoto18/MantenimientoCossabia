@@ -5,10 +5,18 @@ import ServHerreria from "../../Fotos/Herreria.jpg";
 import Carpinteria from "../../Fotos/Carpinteria.jpg";
 import Pintura from "../../Fotos/Pintura.jpg";
 import Plomeria from "../../Fotos/Plomeria.jpg";
+import { useEffect, useRef } from "react";
 
 const Home = () => {
+  const componenteRef = useRef(null);
+  useEffect(()=>{
+    if(componenteRef.current){
+    componenteRef.current.scrollIntoView({behavior: 'smooth', block: 'start'})
+    }
+  },[]);
+
   return (
-    <div className={Style.contenedorPrincipal}>
+    <div className={Style.contenedorPrincipal} ref={componenteRef}>
       <section>
         <div className={`${Style.contTituloPrincipal} container`}>
           <div className="row">
