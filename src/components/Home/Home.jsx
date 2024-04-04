@@ -6,15 +6,14 @@ import Carpinteria from "../../Fotos/Carpinteria.jpg";
 import Pintura from "../../Fotos/Pintura.jpg";
 import Plomeria from "../../Fotos/Plomeria.jpg";
 
-
 const Home = () => {
   return (
-    <div>
+    <div className={Style.contenedorPrincipal}>
       <section>
         <div className={`${Style.contTituloPrincipal} container`}>
           <div className="row">
             <div className={`${Style.linea} col-1`}></div>
-            <div className="col-11 col-md-10">
+            <div className="col-11 col-md-11">
               <h1> Necesitas reparar o remodelar algo en tu hogar?</h1>
               <h3>
                 Contrata soluciones de mantenimiento integral para hogares
@@ -35,7 +34,7 @@ const Home = () => {
 
         <div className={`${Style.contenedorDeServicios} row mt-5`}>
 
-        <div className={`${Style.contTipoServicio} col-10 col-md-5`}>
+        <div className={`${Style.contTipoServicio} col-11 col-md-5`}>
           <h3>Mantenimiento en general</h3>
           <div className={Style.lineaSeparadora}></div>
           <img src={MantGral} alt="photoCocina" />
@@ -47,7 +46,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className={`${Style.contTipoServicio} col-10 col-md-5`}>
+        <div className={`${Style.contTipoServicio} col-11 col-md-5`}>
           <h3>Servicio de Herrería</h3>
           <div className={Style.lineaSeparadora}></div>
           <img src={ServHerreria} alt="photoHerreria" />
@@ -60,7 +59,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className={`${Style.contTipoServicio} col-10 col-md-5`}>
+        <div className={`${Style.contTipoServicio} col-11 col-md-5`}>
           <h3>Servicio de Pintura</h3>
           <div className={Style.lineaSeparadora}></div>
           <img src={Pintura} alt="photoPintura" />
@@ -70,7 +69,7 @@ const Home = () => {
           </h6>
         </div>
           
-        <div className={`${Style.contTipoServicio} col-10 col-md-5`}>
+        <div className={`${Style.contTipoServicio} col-11 col-md-5`}>
           <h3>Servicio de Carpinteria</h3>
           <div className={Style.lineaSeparadora}></div>
           <img src={Carpinteria} alt="photoCarpinteria" />
@@ -80,7 +79,7 @@ const Home = () => {
           </h6>
         </div>
 
-        <div className={`${Style.contTipoServicio} col-10 col-md-5`}>
+        <div className={`${Style.contTipoServicio} col-11 col-md-5`}>
           <h3>Servicio de Plomeria</h3>
           <div className={Style.lineaSeparadora}></div>
           <img src={Plomeria} alt="photoPlomeria" />
