@@ -3,8 +3,11 @@ import { useState } from "react";
 import Validation from "./Validation";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import swal from 'sweetalert';
+import { useEffect } from "react";
 
 const FormularioConsulta = () => {
+  
   const [userData, setUserData] = useState({
     user_name: "",
     user_email: "",
@@ -42,6 +45,18 @@ const FormularioConsulta = () => {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
+          setUserData( prevUserData => ({
+            ...prevUserData,
+            user_name: "",
+            user_email: "",
+            telefono: "",
+            message: "",
+          }))
+          swal({
+            title : "Formulario enviado con éxito",
+            text : "Gracias por contactarnos! Te responderemos a la brevedad",
+            icon: "success",
+          });
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -67,6 +82,7 @@ const FormularioConsulta = () => {
                   className={Styles.inputs}
                   name="user_name"
                   onChange={handleChange}
+                  value={userData.user_name}
                 />
                 {errors.n1 && <p className={Styles.errores}>{errors.n1}</p>}
               </div>
@@ -78,6 +94,7 @@ const FormularioConsulta = () => {
                   className={Styles.inputs}
                   onChange={handleChange}
                   name="user_email"
+                  value={userData.user_email}
                 />
                 {errors.e1 && <p className={Styles.errores}>{errors.e1}</p>}
                 {errors.e2 && <p className={Styles.errores}>{errors.e2}</p>}
@@ -91,6 +108,7 @@ const FormularioConsulta = () => {
                   className={Styles.inputs}
                   name="telefono"
                   onChange={handleChange}
+                  value={userData.telefono}
                 />
                 {errors.t2 && <p className={Styles.errores}>{errors.t2}</p>}
               </div>
@@ -104,6 +122,7 @@ const FormularioConsulta = () => {
                   className={Styles.TextareaForm}
                   placeholder="Ingresa tu consulta"
                   onChange={handleChange}
+                  value={userData.message}
                 ></textarea>
                 {errors.c1 && <p className={Styles.errores}>{errors.c1}</p>}
               </div>

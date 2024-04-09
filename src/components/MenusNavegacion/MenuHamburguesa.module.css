@@ -58,10 +58,13 @@
     background-color: red;
 }
 
-.links{
-    color: #FFFFFF;
-    text-decoration: none;
+.linkss{
+    color: #CC5500;
 }
+
+.linkActive{
+    color: #CCCCCC;
+   }
 
 @media (min-width: 768px){
    .barraNavegacion{
@@ -92,5 +95,8 @@
     color: #CC5500 ;
    }
  
+   a:active{
+    color:white;
+   }
 
 }
