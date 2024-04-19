@@ -14,19 +14,13 @@ useEffect(()=>{
    }
 
 },[])
-
    return(
-      <div>
+      <div className={Styles.contenedorPrincipal}>
          <section className={Styles.section1} ref={componenteRef}>
-          <div className="container">
-          <div className={`row ${Styles.contSection1}`}>
-
-               <div className={`col-1 ${Styles.lineaNaranja}`}></div>
-               <div className={`col-11 ${Styles.tituloPpal}`}>
-                  <h1>Quienes somos?</h1>
-               </div>
-            </div>
-          </div>
+          
+               <div className={Styles.lineaNaranja}></div>
+               <div className={Styles.tituloPpal}><h1>Quienes somos?</h1> </div>
+                  
          </section>
      
          <section>
@@ -55,13 +49,13 @@ useEffect(()=>{
              situación que se presente en su hogar u oficin
             </p>
             </div>
-         </section>
+         
 
-         <section>
+         
            <div className={`container ${Styles.contenedorAsesoramiento}`}>
             <div className={`row ${Styles.contSectionAsesoramiento} ${Styles.backgroundImage}`}>
-               <div className={`col-1 ${Styles.lineaNaranja}`}></div>
-               <div className={`col-12 ${Styles.tituloAsesoramiento}`}>
+               {/* <div className={`col-1 ${Styles.lineaNaranja}`}></div> */}
+               <div className={`col-12 col-md-5${Styles.tituloAsesoramiento}`}>
                   <h4>CONSULTE Y RECIBA ASESORAMIENTO Y PRESUPUESTO
                      GRATIS
                   </h4>
@@ -78,14 +72,14 @@ useEffect(()=>{
                   <h4>3541641390</h4>
                  </div>
             </div>
-          </div>
-         </section>
          
          <div className={Styles.contenedorBoton}>
             <Link to="/Contactanos" className={Styles.linkkk}>
             <button className={Styles.BtComunicate}>Comunicate con nosotros</button>
             </Link>
          </div>
+          </div>
+         </section>
          
 
       </div>

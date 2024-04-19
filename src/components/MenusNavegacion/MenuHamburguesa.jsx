@@ -75,7 +75,7 @@ const MenuHamburguesa = () => {
           Nosotros
           </Link>
          <Link to="/Contactanos" className={currentPath ==="/Contactanos"? Styles.linkActive : Styles.linkss}>
-           Contactanos 
+           Contactanos
            </Link>
           </div> 
           

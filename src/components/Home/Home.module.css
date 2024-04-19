@@ -1,11 +1,26 @@
 .contenedorPrincipal{
-    width: 94%;
+    width: 94% !important;
     margin: 0 auto !important;
 }
 
 .contTituloPrincipal {
     width: 90% !important;
     padding-top: 9em;
+}
+
+.contTituloPrincipal h1{
+    font-weight: 700;
+}
+
+.contTituloPrincipal h2{
+    margin-top: 1em;
+    text-align: center;
+    font-weight: 500;
+}
+.contTituloPrincipal h3{
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0.5em;
 }
 
 .linea {
@@ -47,17 +62,38 @@
     color: white;
 }
 
-.contTipoServicio {
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 2em;
+.contenedorDeServicios{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto !important;
     align-items: center;
+  }
+
+.contTipoServicio {
+    margin: 0 auto;
+    margin-top: 2em; 
+    text-align: center;
+}
+
+.contTipoServicio h3, .contTipoServicio h6, .contTenedorConstructor h3{
+    text-align: left;
+    margin-top: 0.8em;
 }
 
 .contTipoServicio img {
-    object-fit:scale-down;
+    object-fit:cover;
     width: 100%;
-    height: auto;
+    border-radius: 7px;
+    /* Si quiero puedo corregir el max-height */
+    max-height: 15em; 
+    margin: 0 auto;
+}
+
+.contTenedorConstructor{
+    margin: 0 auto;
+    margin-top: 2em;
+    text-align: center;
 }
 
 .lineaSeparadora {
@@ -65,20 +101,51 @@
     border: 1px solid #CC5500;
     margin-bottom: 1em;
 }
-
-.contTipoServicio h3,
-.contTipoServicio h6 {
-    margin-top: 0.7em;
+.contTenedorConstructor img{
+    object-fit: contain;
+    height: 14em;
+    max-width: 100%;
+    margin: 0 auto;
 }
+
+.contenedorImgFondo{
+background-image: url("../../Fotos//Logo.png");
+    background-size: cover;
+    object-fit: scale-down; 
+    max-height: 15em; 
+    background-position: center top;
+    background-color: blue;
+    
+}
+
+ 
+.contTenedorConstructor img{
+    height: 15em;
+ }
+
 
 
 @media (min-width : 768px) {
     .linea {
-        border-left: 8px inset #CC5500;
+        border-left: 6px inset #CC5500;
     }   
 
+    .contTituloPrincipal h1{
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .contTituloPrincipal h2{
+        margin-top: 1em;
+        text-align: center;
+        font-weight: 500;
+    }
+    .contTituloPrincipal h3{
+        font-weight: 500;
+        text-align: center;
+        margin-top: 0.5em;
+    }
     .contTitulo2 {
-        
         width: 80%;
         height: auto;
         margin: 0 auto;
@@ -99,24 +166,30 @@
         border: 2px solid #CC5500;
     }
     
-    .contenedorDeServicios{
-      display: flex;
-      align-items: center;
-
-      width: 95%;
-      margin: 0 auto !important;
-    }
-    
     .contTipoServicio{   
-        height: 29em;
-        margin: 0 auto;
-        margin-top: 1em !important;
-        
+        height: 26em;
+        margin-top: 1em !important;  
+    }
+
+    .contTipoServicio img {
+        max-height: none; 
+        width: 97%;
+        height: 16em;
+        margin-left: 0 !important;
         
     }
-    .contTipoServicio img {
-        object-fit: cover;
-        width: 28.5em;
-        height: 18em;
+  
+    .contTenedorConstructor{
+        height: 26em;
+        margin-top: 1em !important;     
+       
+   }
+
+   .contenedorImgFondo{
+    height: 16em;
+   }
+ 
+   .contTenedorConstructor img{
+       height: 22em;
     }
 }
