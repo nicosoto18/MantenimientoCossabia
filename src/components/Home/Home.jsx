@@ -52,7 +52,7 @@ const Home = () => {
             <div>
               <h6>
                 Arreglo de percianas, cambio de cerraduras, reparacion de
-                muebles, corte de césped, mantenimiento de jardines,etc
+                muebles, corte de césped, mantenimiento de jardines y otros arreglos en general.
               </h6>
             </div>
           </div>
@@ -63,9 +63,9 @@ const Home = () => {
             <img src={ServHerreria} alt="photoHerreria" />
             <div>
               <h6>
-                Instalacion de rejas, fabricacion de puertas y portones,
-                reparacion de estructuras metálicas, diseño y construccion de
-                barandas, etc
+                Instalación de rejas, fabricación de puertas y portones,
+                reparación de estructuras metálicas, diseño y construcción de
+                barandas de todo tipo.
               </h6>
             </div>
           </div>
@@ -76,8 +76,9 @@ const Home = () => {
             <img src={Pintura} alt="photoPintura" />
             <div>
               <h6>
-                Pintura interior y exterior, reparacion de superficies,
-                aplicacion de pintura decorativa, restauracion de fachadas
+                Pintura interior y exterior, reparación de superficies,
+                aplicación de pintura decorativa, restauración de fachadas,
+                eliminación de humedad.
               </h6>
             </div>
           </div>
@@ -88,8 +89,8 @@ const Home = () => {
             <img src={Carpinteria} alt="photoCarpinteria" />
             <div>
               <h6>
-                Diseño y fabricación de muebles a medida, reparacion y
-                restauracion de mobiliario para el hogar, etc
+              Diseño y fabricación a medida de muebles, reparación y restauración de mobiliario
+               para el hogar, junto con servicios de instalación y mantenimiento de techos de madera.
               </h6>
             </div>
           </div>
@@ -100,10 +101,9 @@ const Home = () => {
             <img src={Plomeria} alt="photoPlomeria" />
             <div>
               <h6>
-                Reparacion de fugas de agua, instalacion y reparacion de grifos
-                y sanitarios, destape de cañerias, instalacion de sistemas de
-                agua caliente, reparacion de filtraciones, mantenimiento de
-                sistemas de alcantarillado,etc
+                Reparación de fugas de agua, instalación y reparación de grifos
+                y sanitarios, destape de cañerias, instalación de sistemas de
+                agua caliente, reparación de filtraciones,etc
               </h6>
             </div>
               </div>

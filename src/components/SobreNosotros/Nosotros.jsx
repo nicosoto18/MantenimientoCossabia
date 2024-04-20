@@ -62,7 +62,7 @@ useEffect(()=>{
                </div>
                 <div className="mt-4">
                   <h6>
-                     Solucionamos desperfectos del hogar, asegurando el professionalismo y calidad
+                     Solucionamos desperfectos del hogar, asegurando el profesionalismo y calidad.
                   </h6> 
                 </div>
                  <div className="mt-4">

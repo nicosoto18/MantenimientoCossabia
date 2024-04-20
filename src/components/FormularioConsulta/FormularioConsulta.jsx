@@ -3,11 +3,10 @@ import { useState } from "react";
 import Validation from "./Validation";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import swal from 'sweetalert';
+import swal from "sweetalert";
 import { useEffect } from "react";
 
 const FormularioConsulta = () => {
-  
   const [userData, setUserData] = useState({
     user_name: "",
     user_email: "",
@@ -45,16 +44,16 @@ const FormularioConsulta = () => {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
-          setUserData( prevUserData => ({
+          setUserData((prevUserData) => ({
             ...prevUserData,
             user_name: "",
             user_email: "",
             telefono: "",
             message: "",
-          }))
+          }));
           swal({
-            title : "Formulario enviado con éxito",
-            text : "Gracias por contactarnos! Te responderemos a la brevedad",
+            title: "Formulario enviado con éxito",
+            text: "Gracias por contactarnos! Te responderemos a la brevedad",
             icon: "success",
           });
         },
@@ -75,42 +74,44 @@ const FormularioConsulta = () => {
             ref={form}
           >
             <div className={Styles.contenidoFormulario}>
-              <div className={Styles.inputCointainer}>
-                <input
-                  type="text"
-                  placeholder="Nombre"
-                  className={Styles.inputs}
-                  name="user_name"
-                  onChange={handleChange}
-                  value={userData.user_name}
-                />
-                {errors.n1 && <p className={Styles.errores}>{errors.n1}</p>}
-              </div>
+              <div className={Styles.contenedorDatosForm}>
+                <div className={Styles.inputCointainer}>
+                  <input
+                    type="text"
+                    placeholder="Nombre"
+                    className={Styles.inputs}
+                    name="user_name"
+                    onChange={handleChange}
+                    value={userData.user_name}
+                  />
+                  {errors.n1 && <p className={Styles.errores}>{errors.n1}</p>}
+                </div>
 
-              <div className={Styles.inputCointainer}>
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className={Styles.inputs}
-                  onChange={handleChange}
-                  name="user_email"
-                  value={userData.user_email}
-                />
-                {errors.e1 && <p className={Styles.errores}>{errors.e1}</p>}
-                {errors.e2 && <p className={Styles.errores}>{errors.e2}</p>}
-                {errors.e3 && <p className={Styles.errores}>{errors.e3}</p>}
-              </div>
+                <div className={Styles.inputCointainer}>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    className={Styles.inputs}
+                    onChange={handleChange}
+                    name="user_email"
+                    value={userData.user_email}
+                  />
+                  {errors.e1 && <p className={Styles.errores}>{errors.e1}</p>}
+                  {errors.e2 && <p className={Styles.errores}>{errors.e2}</p>}
+                  {errors.e3 && <p className={Styles.errores}>{errors.e3}</p>}
+                </div>
 
-              <div className={Styles.inputCointainer}>
-                <input
-                  type="text"
-                  placeholder="Telefono (opcional)"
-                  className={Styles.inputs}
-                  name="telefono"
-                  onChange={handleChange}
-                  value={userData.telefono}
-                />
-                {errors.t2 && <p className={Styles.errores}>{errors.t2}</p>}
+                <div className={Styles.inputCointainer}>
+                  <input
+                    type="text"
+                    placeholder="Telefono (opcional)"
+                    className={Styles.inputs}
+                    name="telefono"
+                    onChange={handleChange}
+                    value={userData.telefono}
+                  />
+                  {errors.t2 && <p className={Styles.errores}>{errors.t2}</p>}
+                </div>
               </div>
 
               <div className={Styles.textareaContainer}>
@@ -126,15 +127,14 @@ const FormularioConsulta = () => {
                 ></textarea>
                 {errors.c1 && <p className={Styles.errores}>{errors.c1}</p>}
               </div>
-
-              <button
-                className={Styles.btEnviarConsulta}
-                type="submit"
-                value="Send"
-              >
-                Enviar tu consulta
-              </button>
             </div>
+            <button
+              className={Styles.btEnviarConsulta}
+              type="submit"
+              value="Send"
+            >
+              Enviar tu consulta
+            </button>
           </form>
         </div>
       </section>

@@ -10,6 +10,7 @@
 .contenidoFormulario{
     margin-top: 6%;
     margin-bottom: 6%;
+    
 }
 
 .inputs, .TextareaForm{
@@ -30,6 +31,7 @@
 
 .textareaContainer{
     height: 18em;
+
 }
 
 
@@ -42,21 +44,55 @@
     margin-bottom: 20px;
 }
 
-@media (max-width: 576px){
-    .Formulario{
-        width: 90%;
-    }
-}
+@media(min-width: 768px){
+   
+    .contenidoFormulario{
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    align-items: center;
 
-@media(min-width: 577px){
-    .Formulario{
-        width: 50%;
+   }
+   .contenedorDatosForm{
+    width: 50%;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+
+
+   }
+   
+   .inputCointainer{
+    margin-top: none; 
+    margin-bottom: none;
+ }
+   
+   .inputs{
+       width: 80%;
+       margin: 0 auto;
+       border-radius: 5px;
+       padding: 5px;     
     }
+    
+    .textareaContainer{
+     width: 50%;
+     display: flex;
+     align-items: center;
+     margin-bottom: 1em;
+    }
+
+    .textareaContainer textarea{   
+        width: 90%;
+        height: 14em;
+
+    }
+
 }
 
 .errores{
     margin-top: 2px;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     text-align: left;
     color: #FF3333;

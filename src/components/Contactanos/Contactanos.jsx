@@ -17,16 +17,12 @@ const Contactanos = () => {
   return (
     <div className={Styles.contenedorPpal} ref={componenteRef}>
       <section>
-        <div className="container">
-          <div className="row">
-            <div className={Styles.contenedorTitulo}>
-              <div className={`col-1 ${Styles.lineaNaranja}`}></div>
-              <div>
-                <h1>Póngase en contacto o solicite presupuesto</h1>
-              </div>
-            </div>
-          </div>
+        <div className={Styles.lineaNaranja}></div>
+
+        <div className={Styles.tituloPpal}>
+          <h1>Póngase en contacto o solicite presupuesto</h1>
         </div>
+
         <div className={Styles.contenedorSubtitulo}>
           <h4>
             Si tenés una consulta, por favor completa el siguiente formulario
@@ -43,7 +39,7 @@ const Contactanos = () => {
             <div className={`col-md-5 col-sm-12y ${Styles.contenedorContacto}`}>
               <h4>Llamanos</h4>
               <div>
-                <h5 className="mt-3">Estamos disponibles 24/7</h5>
+                <h5 className="mt-3">Estamos disponibles 24hs</h5>
               </div>
               <div className="d-flex justify-content-center mt-3">
                 <i class="bi bi-telephone-fill"></i>

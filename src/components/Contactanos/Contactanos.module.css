@@ -1,24 +1,25 @@
 .contenedorPpal {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
-.contenedorTitulo {
+.tituloPpal {
     margin-top: 9em;
     display: flex;
     align-items: center;
+    border-left: 3px solid #CC5500 ;
+    padding-left: 1.5em;
 }
 
-.lineaNaranja {
+/* .lineaNaranja {
     border-left: 3px inset #CC5500;
     height: 100%;
-}
+} */
 
 .contenedorSubtitulo {
     margin: 0 auto;
     margin-top: 6vh;
-    margin-left: 3%;
-    margin-right: 3%;
+    width: 90%;
 }
 
 .conenedorFormasContacto {
@@ -26,7 +27,7 @@
 }
 
 .contenedorContacto {
-    background-color: rgba(200, 200, 200, 0.5);
+    background-color: #001F3F;
     margin: 0 auto;
     text-align: center;
     margin-top: 5vh;
@@ -40,4 +41,28 @@
 
 .contenedorContacto h4 {
     font-weight: bold;
+    
+}
+
+.contenedorContacto i{
+    color: #F5F5F5;
+    font-size: 14px;
+
+}
+@media (min-width : 768px) {
+
+    .contenedorPpal {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contenedorSubtitulo {
+        margin: 0 auto;
+        margin-top: 5em;
+        width: 90%;
+        text-align: left;
+       
+    }
+    
 }
