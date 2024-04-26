@@ -52,9 +52,9 @@ const Home = () => {
             <img src={MantGral} alt="photoCocina" />
             <div>
               <h6>
-                Arreglo de percianas, cambio de cerraduras, reparacion de
-                muebles, corte de césped, mantenimiento de jardines y otros
-                arreglos en general.
+                Arreglo de persianas, cambio de cerraduras, reparación de
+                muebles, mantenimiento de piscinas, instalación de sistemas de iluminación 
+                y otros servicios relacionados.
               </h6>
             </div>
           </div>
