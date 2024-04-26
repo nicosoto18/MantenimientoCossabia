@@ -6,6 +6,7 @@ import Carpinteria from "../../Fotos/Carpinteria.jpg";
 import Pintura from "../../Fotos/Pintura.jpg";
 import Plomeria from "../../Fotos/Plomeria.jpg";
 import Constructor from "../../Fotos/FotoAnimada.png";
+import Jardineria from "../../Fotos/Jardineria.jpg";
 
 import { useEffect, useRef } from "react";
 
@@ -52,7 +53,8 @@ const Home = () => {
             <div>
               <h6>
                 Arreglo de percianas, cambio de cerraduras, reparacion de
-                muebles, corte de césped, mantenimiento de jardines y otros arreglos en general.
+                muebles, corte de césped, mantenimiento de jardines y otros
+                arreglos en general.
               </h6>
             </div>
           </div>
@@ -89,8 +91,9 @@ const Home = () => {
             <img src={Carpinteria} alt="photoCarpinteria" />
             <div>
               <h6>
-              Diseño y fabricación a medida de muebles, reparación y restauración de mobiliario
-               para el hogar, junto con servicios de instalación y mantenimiento de techos de madera.
+                Diseño y fabricación a medida de muebles, reparación y
+                restauración de mobiliario para el hogar, junto con servicios de
+                instalación y mantenimiento de techos de madera.
               </h6>
             </div>
           </div>
@@ -106,19 +109,22 @@ const Home = () => {
                 agua caliente, reparación de filtraciones,etc
               </h6>
             </div>
-              </div>
-       
-            <div className={`${Style.contTenedorConstructor} col-11 col-md-5`}>
-              <h3>Presupuesto gratis</h3>
-              <div className={Style.lineaSeparadora}></div>
-              <div className={Style.contenedorImgFondo}>
-              <img
-                src={Constructor}
-                alt="photoPlomeria"
-                />
-                </div>
+          </div>
+
+          <div className={`${Style.contTipoServicio} col-11 col-md-5 `}>
+            <h3>Servicio de Jardineria</h3>
+            <div className={Style.lineaSeparadora}></div>
+            <img src={Jardineria} alt="photoPlomeria" />
+            <div>
+              <h6>
+              Corte de césped, poda de árboles y arbustos, control de plagas y enfermedades,
+              mantenimiento de caminos y senderos, podas ornamentales, diseño de jardines,
+              control de malezas.
+              </h6>
             </div>
-          
+          </div>
+
+
         </div>
       </section>
     </div>

@@ -92,38 +92,15 @@
     margin: 0 auto;
 }
 
-.contTenedorConstructor{
-    margin: 0 auto;
-    margin-top: 2em;
-    text-align: center;
-}
+
 
 .lineaSeparadora {
     width: 20%;
     border: 1px solid #CC5500;
     margin-bottom: 1em;
 }
-.contTenedorConstructor img{
-    object-fit: contain;
-    height: 14em;
-    max-width: 100%;
-    margin: 0 auto;
-}
 
-.contenedorImgFondo{
-background-image: url("../../Fotos//Logo.png");
-    background-size: cover;
-    object-fit: scale-down; 
-    max-height: 15em; 
-    background-position: center top;
-    background-color: blue;
-    
-}
 
- 
-.contTenedorConstructor img{
-    height: 15em;
- }
 
 
 
@@ -181,17 +158,5 @@ background-image: url("../../Fotos//Logo.png");
         
     }
   
-    .contTenedorConstructor{
-        height: 26em;
-        margin-top: 1em !important;     
-       
-   }
-
-   .contenedorImgFondo{
-    height: 16em;
-   }
- 
-   .contTenedorConstructor img{
-       height: 22em;
-    }
+   
 }
